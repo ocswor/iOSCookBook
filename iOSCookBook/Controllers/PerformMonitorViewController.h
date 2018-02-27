@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PerformMonitorViewController.h
 //  iOSCookBook
 //
 //  Created by eric on 2018/2/27.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PerformMonitorViewController : UITableViewController
 
 @end
-

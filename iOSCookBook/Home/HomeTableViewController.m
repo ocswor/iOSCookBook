@@ -8,6 +8,8 @@
 
 #import "HomeTableViewController.h"
 #import "PerformMonitorViewController.h"
+#import "NSObject+Extension.h"
+#import "Person.h"
 
 @interface CellModel:NSObject
 @property(nonatomic,copy)NSString *title;
@@ -28,6 +30,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Person *person = [[Person alloc] init];
+    [person guard_addDeallocBlock:^{
+        NSLog(@"------ guard_addDeallocBlock");
+    }];
+    [person guard_addDeallocBlock:^{
+        NSLog(@"------ guard_addDeallocBlock");
+    }];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

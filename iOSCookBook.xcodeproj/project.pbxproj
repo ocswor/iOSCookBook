@@ -17,6 +17,8 @@
 		07C6EEC22045381400492F59 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EEC12045381400492F59 /* HomeTableViewController.m */; };
 		07C6EEC9204538E200492F59 /* PerformMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EEC8204538E200492F59 /* PerformMonitorViewController.m */; };
 		07C6EECB2045395700492F59 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C6EECA2045395600492F59 /* CrashReporter.framework */; };
+		07C6EED620455B1200492F59 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EED520455B1200492F59 /* NSObject+Extension.m */; };
+		07C6EEDA20455C9E00492F59 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EED920455C9E00492F59 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		07C6EEC7204538E200492F59 /* PerformMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformMonitorViewController.h; sourceTree = "<group>"; };
 		07C6EEC8204538E200492F59 /* PerformMonitorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformMonitorViewController.m; sourceTree = "<group>"; };
 		07C6EECA2045395600492F59 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
+		07C6EED420455B1200492F59 /* NSObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		07C6EED520455B1200492F59 /* NSObject+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		07C6EED820455C9E00492F59 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		07C6EED920455C9E00492F59 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		07C6EEA2204535DD00492F59 /* iOSCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				07C6EED320455AE100492F59 /* Category */,
 				07C6EEC6204538AD00492F59 /* Controllers */,
 				07C6EEBF204537C400492F59 /* Home */,
 				07C6EEB9204535E800492F59 /* Runloop */,
@@ -99,6 +106,7 @@
 		07C6EEBF204537C400492F59 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				07C6EED720455C8900492F59 /* Model */,
 				07C6EEC02045381400492F59 /* HomeTableViewController.h */,
 				07C6EEC12045381400492F59 /* HomeTableViewController.m */,
 			);
@@ -120,6 +128,24 @@
 				07C6EEC8204538E200492F59 /* PerformMonitorViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07C6EED320455AE100492F59 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				07C6EED420455B1200492F59 /* NSObject+Extension.h */,
+				07C6EED520455B1200492F59 /* NSObject+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		07C6EED720455C8900492F59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07C6EED820455C9E00492F59 /* Person.h */,
+				07C6EED920455C9E00492F59 /* Person.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,9 +222,11 @@
 			files = (
 				07C6EEC22045381400492F59 /* HomeTableViewController.m in Sources */,
 				07C6EEBE2045375200492F59 /* PerformanceMonitor.m in Sources */,
+				07C6EEDA20455C9E00492F59 /* Person.m in Sources */,
 				07C6EEC9204538E200492F59 /* PerformMonitorViewController.m in Sources */,
 				07C6EEB3204535DD00492F59 /* main.m in Sources */,
 				07C6EEA5204535DD00492F59 /* AppDelegate.m in Sources */,
+				07C6EED620455B1200492F59 /* NSObject+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
